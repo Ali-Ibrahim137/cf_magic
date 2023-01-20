@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "CodeForces Magic",
+    "description": "Do you think you must wait until Christmas to see your handle in GrandMaster color for a limited time? You are wrong! With this extension you can change your handle to any rank you want, even you can become one of CodeForces Headquarters!",
+    "version": "1.0",
+    "icons": {
+        "48": "icons/icon48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://codeforces.com/*",
+                "https://codeforces.com/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "action": {
+        "default_icon": "icons/icon48.png",
+        "default_title": "CodeForces Magic",
+        "default_popup": "popup.html"
+    }
+}

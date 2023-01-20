@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+    <title>CodeForces Magic</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="popup.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="found" class="container-fluid w-max-content">
+        <form id="ranks" class="card card-signin form-div shadow  mt-3 bg-white rounded">
+            <select id="selectedRank" class="form-control custom" required>
+                <option>Unrated</option>
+                <option>Newbie</option>
+                <option>Pupil</option>
+                <option>Specialist</option>
+                <option>Expert</option>
+                <option>Candidate Master </option>
+                <option>Master</option>
+                <option>International Master</option>
+                <option>Grandmaster</option>
+                <option>International Grandmaster</option>
+                <option>Legendary Grandmaster </option>
+                <option>Headquarters</option>
+            </select>
+        </form>
+        <div class="mx-auto m-3" style="display: block; width:140px;">
+            <button id="magic-btn" form="ranks" class="btn btn-primary mx-auto m-2" type="button" style="width: 140px;">
+                Do the magic
+            </button>
+        </div>
+    </div>
+    <div id="notFound" class="container-fluid w-max-content">
+        <p>Error</p>
+        <p>You are either not in CodeForces page, or not logged in</p>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popup.js" .js"></script>
+</body>
+</html>
